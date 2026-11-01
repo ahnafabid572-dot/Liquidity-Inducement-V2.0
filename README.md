@@ -23,6 +23,33 @@ broker (MT5), with prices read from the TradingView OANDA feed.
   delivered (verbatim source document).
 - `CLAUDE.md` — working instructions for Claude / Claude Code in this repo.
 - `skill.yaml` — skill metadata (name, title, description).
+- `AI_INSTRUCTIONS.md` — the universal, vendor-neutral operating
+  procedure (workflow, hard rules, exact output format) for any AI.
+- `SYSTEM_PROMPT.md` — a ready-to-paste system prompt for any AI chat.
+- `AGENTS.md` / `GEMINI.md` / `.github/copilot-instructions.md` —
+  auto-read entry points for agent tools, all pointing to
+  `AI_INSTRUCTIONS.md`.
+
+## Use it with ANY AI (same result everywhere)
+
+This repo is **not Claude-only**. The rules, workflow and answer format
+are written in plain, vendor-neutral files so any AI produces the same
+result:
+
+| You are using | Give the AI this |
+| :--- | :--- |
+| Any chat AI (ChatGPT, Gemini, Grok, DeepSeek, ...) | Paste `SYSTEM_PROMPT.md` into its instructions, and upload/paste `references/marco_trading_style_final.md` |
+| Any AI that can read this repo / a URL | Tell it: "Read `AI_INSTRUCTIONS.md` first and follow it exactly" |
+| Claude (chat, Projects, Claude Code) | `SKILL.md`, or clone into `~/.claude/skills/liquidity-inducement-2.0/` |
+| Codex / generic agents | `AGENTS.md` (auto-read by agent tools) |
+| Gemini CLI | `GEMINI.md` |
+| GitHub Copilot | `.github/copilot-instructions.md` (auto-read in this repo) |
+
+Why the results match: `AI_INSTRUCTIONS.md` fixes (1) one read order,
+(2) word-for-word definitions, (3) one workflow order, (4) hard numeric
+rules (RR >= 3.0, buffers, 0%-25% partials), (5) an 8-point checklist
+that must pass 8/8, and (6) one exact output format — plus a tie-break
+rule: when two readings are possible, the answer is NO TRADE.
 
 ## The model in one paragraph
 

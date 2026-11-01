@@ -3,9 +3,12 @@
 This repo is the single source of truth for Marco's Liquidity Inducement
 2.0 (Da Vinci Model). When working here or using this skill:
 
-1. Read `SKILL.md` first, and `references/marco_trading_style_final.md`
-   for the verbatim playbook. If anything elsewhere conflicts with
-   Section 0 of the playbook, Section 0 wins.
+1. Read `AI_INSTRUCTIONS.md` first (the universal procedure every AI
+   follows, so results match across models), then `SKILL.md` and
+   `references/marco_trading_style_final.md` for the verbatim playbook.
+   If anything elsewhere conflicts with Section 0 of the playbook,
+   Section 0 wins. Use the exact verdict format in `AI_INSTRUCTIONS.md`
+   Section 5.
 2. Key corrected rules (do not revert to v1 behaviour):
    - No blind limit at the block edge: entry goes on the sweep of the
      induced level in front of / inside the Liquidity Block; the block
