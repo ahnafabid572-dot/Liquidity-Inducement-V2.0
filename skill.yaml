@@ -1,0 +1,5 @@
+name: "liquidity-inducement-2.0"
+title: "Liquidity Inducement 2.0"
+description: "Marco's Da Vinci liquidity-inducement model: True Liquidity + Engineered Liquidity + Liquidity Block, entry on the sweep of the induced level, SL beyond the whole block, RR at least 3 to the final HTF pool, 0%-25% partial at the first internal pool. Fractal blocks (4H/1H/30m/15m direct, 5m/1m confirmation)."
+category: "Work and knowledge"
+include_in_prompt: false
